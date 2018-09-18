@@ -1,0 +1,7 @@
+---
+- name: Git packages install
+  yum:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items: "{{ git.required_packages }}"
