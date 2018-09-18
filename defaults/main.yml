@@ -1,0 +1,5 @@
+---
+git:
+  required_packages:
+    - git2u
+  additional_package_url: https://setup.ius.io/
