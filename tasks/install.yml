@@ -1,6 +1,10 @@
 ---
+- include_vars:
+    file: "{{ ansible_distribution }}.yml"
+    name: git
+
 - name: Git packages install
-  yum:
+  package:
     name: "{{ item }}"
     state: present
     update_cache: yes
