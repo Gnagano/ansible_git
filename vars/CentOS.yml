@@ -1,4 +1,4 @@
 ---
 #centos
-required_packages:
+git_required_packages:
   - git2u
